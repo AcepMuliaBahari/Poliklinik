@@ -37,7 +37,10 @@ Terakhir, Anda dapat menjalankan aplikasi Laravel dengan perintah:
     php artisan serve
     
 karena pakai tailwincss buka command baru jalankan perintah
+
     npm run dev
+
+    
 Aplikasi akan dijalankan di alamat default http://localhost:8000. Anda dapat mengaksesnya melalui web browser.
 
 
