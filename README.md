@@ -35,8 +35,11 @@ php artisan migrate
 Terakhir, Anda dapat menjalankan aplikasi Laravel dengan perintah:
 
     php artisan serve
-
+    
+karena pakai tailwincss buka command baru jalankan perintah
+    npm run dev
 Aplikasi akan dijalankan di alamat default http://localhost:8000. Anda dapat mengaksesnya melalui web browser.
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
