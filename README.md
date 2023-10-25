@@ -28,10 +28,11 @@ Duplikat file .env.example ke .env dan atur konfigurasi proyek Anda, seperti kon
 Untuk mengamankan sesi dan data Anda, Laravel membutuhkan aplikasi key. Anda dapat menghasilkan key ini dengan perintah berikut:
 
 
-    php artisan key:generate
+        php artisan key:generate
 
 
-6. Migrasi Database:
+
+5. Migrasi Database:
 
 Jika proyek Laravel Anda menggunakan database, Anda harus menjalankan migrasi untuk membuat tabel-tabel yang diperlukan:
 
