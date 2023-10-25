@@ -34,10 +34,10 @@ Untuk mengamankan sesi dan data Anda, Laravel membutuhkan aplikasi key. Anda dap
 
 5. Migrasi Database:
 
-Jika proyek Laravel Anda menggunakan database, Anda harus menjalankan migrasi untuk membuat tabel-tabel yang diperlukan:
+Jika proyek Laravel Anda menggunakan database, Anda harus menjalankan migrasi seeder untuk membuat tabel-tabel yang diperlukan:
 
 
-    php artisan migrate
+    php artisan migrate --seed
 
 
 6. Menjalankan Aplikasi:
