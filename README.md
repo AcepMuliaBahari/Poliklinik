@@ -9,13 +9,13 @@ Untuk membuka sebuah projek laravel yang sudah ada di GitHub, Anda dapat mengiku
     Setelah berhasil mengklon repositori, masuk ke direktori proyek yang baru saja Anda clone:
 
 
-    cd nama-repo
+     cd nama-repo
 
 
  kemudian, instal semua dependensi PHP menggunakan Composer:
 
 
-    composer install
+     composer install
 
 
 3.  Konfigurasi File Lingkungan (Environment):
@@ -28,7 +28,7 @@ Duplikat file .env.example ke .env dan atur konfigurasi proyek Anda, seperti kon
 Untuk mengamankan sesi dan data Anda, Laravel membutuhkan aplikasi key. Anda dapat menghasilkan key ini dengan perintah berikut:
 
 
-php artisan key:generate
+    php artisan key:generate
 
 
 6. Migrasi Database:
@@ -36,7 +36,7 @@ php artisan key:generate
 Jika proyek Laravel Anda menggunakan database, Anda harus menjalankan migrasi untuk membuat tabel-tabel yang diperlukan:
 
 
-php artisan migrate
+    php artisan migrate
 
 
 6. Menjalankan Aplikasi:
