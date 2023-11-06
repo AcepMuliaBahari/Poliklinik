@@ -18,12 +18,18 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+<<<<<<< HEAD
         'username',
         'name',
         'email',
         'password',
         'role',
         'status',
+=======
+        'name',
+        'email',
+        'password',
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     ];
 
     /**
@@ -48,4 +54,8 @@ class User extends Authenticatable
 {
     return $this->role === $role;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 }

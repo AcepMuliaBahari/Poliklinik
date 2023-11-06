@@ -1,25 +1,18 @@
 <x-app-layout>
-<<<<<<< HEAD
- 
-=======
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Home') }}
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-5">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-<<<<<<< HEAD
                 
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    @include('components.sapaan')  {{-- {{ $greeting }}, --}}
+                    <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                        {{ $greeting }},
                     </h2>
-=======
-                <div class="p-6 text-gray-900 dark:text-gray-100">
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
                     {{ __("Selamat Datang Di Sistem Informasi ") }}
                 </div>
             </div>

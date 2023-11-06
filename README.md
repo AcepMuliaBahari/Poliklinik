@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+=======
+Untuk membuka sebuah projek laravel yang sudah ada di GitHub, Anda dapat mengikuti langkah-langkah berikut:
+
+1.  Clone Repositori dari GitHub:
+    Buka terminal atau command prompt di komputer Anda, lalu jalankan perintah berikut:
+
+        git clone https://github.com/AcepMuliaBahari/Poliklinik.git
+
+2.  Instal Dependencies dengan Composer:
+    Setelah berhasil mengklon repositori, masuk ke direktori proyek yang baru saja Anda clone:
+
+
+     cd nama-repo
+
+
+ kemudian, instal semua dependensi PHP menggunakan Composer:
+
+
+     composer install
+
+
+3.  Konfigurasi File Lingkungan (Environment):
+
+Duplikat file .env.example ke .env dan atur konfigurasi proyek Anda, seperti koneksi database dan konfigurasi lainnya. Anda bisa melakukannya dengan perintah:
+
+    cp .env.example .env
+
+4. Generate Key Aplikasi:
+Untuk mengamankan sesi dan data Anda, Laravel membutuhkan aplikasi key. Anda dapat menghasilkan key ini dengan perintah berikut:
+
+
+        php artisan key:generate
+
+
+
+5. Migrasi Database:
+
+Jika proyek Laravel Anda menggunakan database, Anda harus menjalankan migrasi seeder untuk membuat tabel-tabel yang diperlukan:
+
+
+    php artisan migrate --seed
+
+
+6. Menjalankan Aplikasi:
+
+Terakhir, Anda dapat menjalankan aplikasi Laravel dengan perintah:
+
+    php artisan serve
+    
+karena pakai tailwincss buka command baru jalankan perintah
+
+
+    npm run dev
+
+    
+Aplikasi akan dijalankan di alamat default http://localhost:8000. Anda dapat mengaksesnya melalui web browser.
+
+
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -6,6 +66,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+<<<<<<< HEAD
 
 ## About Laravel
 
@@ -64,3 +125,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03

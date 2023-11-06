@@ -1,4 +1,5 @@
 <x-guest-layout>
+<<<<<<< HEAD
     @include('components.sesion')
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
@@ -15,6 +16,11 @@
             <x-text-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('username')" class="mt-2" />
         </div>
+=======
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
@@ -62,6 +68,9 @@
             </x-primary-button>
         </div>
     </form>
+<<<<<<< HEAD
     </div>
     @include('script.script')
+=======
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 </x-guest-layout>

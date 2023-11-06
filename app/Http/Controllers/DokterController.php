@@ -36,9 +36,15 @@ class DokterController extends Controller
         
 
        
+<<<<<<< HEAD
         return redirect()->route('data.dokter');
     }    
     //start Edit dokter
+=======
+        return redirect()->route('data.dokter',);
+    }    
+    //start Edit
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     public function EditDokter($id){
 
         $dokter = Dokter::find($id);
@@ -62,7 +68,11 @@ class DokterController extends Controller
  
 
     ///start delete
+<<<<<<< HEAD
     public function HapusDokter($id){ 
+=======
+    public function HapusDokter($id){
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
         Dokter::findOrfail($id)->delete();
         session()->flash('success', 'Dokter berhasil di hapus');
         return redirect()->back();

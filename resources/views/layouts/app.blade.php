@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
         <title>{{ config('', 'Poliklinik') }}</title>
+=======
+        <title>{{ config('app.name', 'Laravel') }}</title>
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,7 +19,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
+<<<<<<< HEAD
         {{-- @include('components.sesion') --}}
+=======
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.navigation')
 
@@ -32,9 +39,13 @@
             <main>
                 {{ $slot }}
             </main>
+<<<<<<< HEAD
 
         </div>
         @include('components.footer')
         {{-- @include('script.script') --}}
+=======
+        </div>
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     </body>
 </html>

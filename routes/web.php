@@ -1,7 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DokterController;
+=======
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\DokterController;
+use App\Http\Controllers\Member\MemberController;
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\PeriksaController;
 use App\Http\Controllers\ProfileController;
@@ -19,14 +25,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('index');
 })->name('index');
 Route::get('/',[AdminController::class,'AdminHome'])->name('index');
 Route::get('/home',[AdminController::class,'AdminHome'])->name('admin.home');
+=======
+    return view('auth.login');
+});
+
+
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -34,9 +51,16 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+<<<<<<< HEAD
 Route::group(['middleware' => ['auth', 'role:admin,member']], function () {
 
     
+=======
+
+Route::group(['middleware' => ['auth', 'role:admin,member']], function () {
+
+    Route::get('/home',[AdminController::class,'AdminHome'])->name('admin.home');
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     Route::get('/admin/dashboard',[AdminController::class,'AdminDashboard']);
         //dokter
         Route::get('/data/dokter',[DokterController::class, 'DataDokter'])->name('data.dokter');
@@ -59,9 +83,22 @@ Route::group(['middleware' => ['auth', 'role:admin,member']], function () {
     Route::get('/edit/periksa{id}',[PeriksaController::class, 'Editperiksa'])->name('edit.periksa');
     Route::post('/update/periksa',[PeriksaController::class, 'Updateperiksa'])->name('update.periksa');
     Route::get('/hapus/periksa{id}',[PeriksaController::class, 'Hapusperiksa'])->name('hapus.periksa');
+<<<<<<< HEAD
 
     //coba
     Route::get('/coba/coba',[AdminController::class, 'CobaTable'])->name('coba.table');
     
     
 }); 
+=======
+    
+    
+}); 
+    
+// Route::middleware('auth','role:member')->group(function () {
+    
+//     Route::get('member/dashboard',[MemberController::class,'MemberDashboard']);
+//     Route::get('/member/home',[MemberController::class,'MemberHome'])->name('member.home');
+//     Route::get('data/periksa',[PeriksaController::class,'DataPeriksa'])->name('data.periksa');
+// });
+>>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
