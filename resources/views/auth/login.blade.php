@@ -12,7 +12,7 @@
         @csrf
         <!-- Email Address -->
         <div>
-            <x-input-label for="login" :value="__('Username or Email')" />
+            <x-input-label for="login" :value="__('Username or name or Email')" />
             <x-text-input id="login" class="block mt-1 w-full" type="text" name="login" :value="old('login')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('login')" class="mt-2" />
         </div>
