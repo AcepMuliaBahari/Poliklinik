@@ -19,10 +19,11 @@ return new class extends Migration
             $table->unsignedBigInteger('id_dokter')->nullable(); // Kolom rujukan ke tabel dokter
             $table->date('tanggal_periksa');
             $table->text('catatan');
-            $table->text('obat');
+            $table->integer('biaya_periksa');
             $table->timestamps();
             $table->foreign('id_pasien')->references('id')->on('pasiens')->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreign('id_dokter')->references('id')->on('dokters')->cascadeOnDelete()->cascadeOnUpdate();
+            
         });
     }
 

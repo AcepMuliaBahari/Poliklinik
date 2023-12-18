@@ -31,11 +31,14 @@
             <li>
                 <a href="{{ route('data.periksa') }}" class="mr-4 hover:underline md:mr-6">Periksa</a>
             </li>
+            <li>
+                <a href="{{ route('detail.periksa') }}" class="mr-4 hover:underline md:mr-6">Detail Periksa</a>
+            </li>
             {{-- <li>
                 <a href="{{ route('coba.table') }}" class="mr-4 hover:underline md:mr-6">Coba</a>
             </li> --}}
     
         </ul>
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2024 <a href="#" class="hover:underline">Poliklinik™</a>. All Rights Reserved.</span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Poliklinik™</a>. All Rights Reserved.</span>
     </div>
   </footer>

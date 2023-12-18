@@ -4,11 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
         <title>Laravel</title>
-=======
-        <title>Poliklinik</title>
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">

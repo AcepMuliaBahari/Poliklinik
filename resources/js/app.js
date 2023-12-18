@@ -1,8 +1,5 @@
 import "./bootstrap";
-<<<<<<< HEAD
 import "flowbite";
-=======
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
 import Alpine from "alpinejs";
 
@@ -10,21 +7,6 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-<<<<<<< HEAD
-=======
-// document
-//     .getElementById("dark-mode-toggle")
-//     .addEventListener("click", function () {
-//         const html = document.documentElement; // Mengakses elemen <html>
-//         if (html.classList.contains("dark")) {
-//             html.classList.remove("dark");
-//             // Simpan preferensi pengguna jika diperlukan
-//         } else {
-//             html.classList.add("dark");
-//             // Simpan preferensi pengguna jika diperlukan
-//         }
-//     });
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 

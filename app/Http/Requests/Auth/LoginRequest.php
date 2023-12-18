@@ -29,15 +29,11 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-<<<<<<< HEAD
             
             // 'usernamename' => ['required', 'string', 'username'],
             // 'name' => ['required', 'string', 'name'],
             'login' => ['required', 'string', ],
             // 'email' => ['required', 'string', 'email'],
-=======
-            'login' => ['required', 'string', ],
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
             'password' => ['required', 'string'],
         ];
     }
@@ -51,18 +47,10 @@ class LoginRequest extends FormRequest
     {
         $this->ensureIsNotRateLimited();
         $user = User::where('email',$this->login)
-<<<<<<< HEAD
         ->orWhere('username',$this->login)
         ->orWhere('name',$this->login)
         ->orWhere('email',$this->login)
         ->first();
-=======
-        ->orWhere('name',$this->login)
-        ->orWhere('email',$this->login)
-        
-        ->first()
-        ;
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
         if (!$user||!Hash::check($this->password,$user->password)) {
             RateLimiter::hit($this->throttleKey());

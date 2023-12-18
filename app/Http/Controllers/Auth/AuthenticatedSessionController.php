@@ -29,7 +29,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-<<<<<<< HEAD
         $url = '';
         if($request->user()->role === 'admin'){
             $url = '/';
@@ -41,20 +40,6 @@ class AuthenticatedSessionController extends Controller
         }
         session()->flash('success', 'Log In Sucess ');
         return redirect()->intended($url);
-=======
-         $url = '';
-        if($request->user()->role === 'admin'){
-            $url = '/home';
-        } elseif($request->user()->role === 'member'){
-            $url = '/home';
-        } 
-        elseif($request->user()->role === 'user'){
-            $url = '/dashboard';}
-        return redirect()->intended($url);
-        
-
-       
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     }
 
     /**
@@ -67,13 +52,8 @@ class AuthenticatedSessionController extends Controller
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-<<<<<<< HEAD
         session()->flash('success', 'Log Out Sucess ');
 
         return redirect('/');
-=======
-
-        return redirect('/login');
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
     }
 }

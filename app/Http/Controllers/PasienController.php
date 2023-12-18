@@ -45,11 +45,7 @@ class PasienController extends Controller
 
         $upid = $request->id;
      
-<<<<<<< HEAD
         Pasien::findOrfail($upid)->update([
-=======
-        pasien::findOrfail($upid)->update([
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
             'nama_pasien'=>$request->nama_pasien,
             'alamat'=>$request->alamat,
@@ -62,21 +58,10 @@ class PasienController extends Controller
 
     //start delete
     public function HapusPasien($id){
-<<<<<<< HEAD
         Pasien::findOrfail($id)->delete();
 
 
         session()->flash('success', ' Pasien Berhasil Dihapus');
         return redirect()->back();
 }
-=======
-        pasien::findOrfail($id)->delete();
-
-
-        session()->flash('success', 'Data Terhapus');
-        return redirect()->back();
-
-
-    }//end
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 }

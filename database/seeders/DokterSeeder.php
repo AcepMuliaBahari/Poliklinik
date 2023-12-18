@@ -17,7 +17,6 @@ class DokterSeeder extends Seeder
     {
         $data = [
             [
-<<<<<<< HEAD
                 'nama_dokter' => 'Dr Angga',
                 'alamat' => 'JL.Penyembuh sakit',
                 'no_hp' => ' 083111111111',
@@ -39,29 +38,6 @@ class DokterSeeder extends Seeder
                 'nama_dokter' => 'Dr Nita',
                 'alamat' => 'Semarang Selatan',
                 'no_hp' => '081444444444',
-=======
-                'nama_dokter' => 'Nama dokter 1',
-                'alamat' => 'Alamat dokter 1',
-                'no_hp' => ' 081',
-                
-            ],
-            [
-                'nama_dokter' => 'Nama dokter 2',
-                'alamat' => 'Alamat dokter 2',
-                'no_hp' => '082',
-                
-            ],
-            [
-                'nama_dokter' => 'Nama dokter 3',
-                'alamat' => 'Alamat dokter 3',
-                'no_hp' => '083',
-                
-            ],
-            [
-                'nama_dokter' => 'Nama dokter 4',
-                'alamat' => 'Alamat dokter 4',
-                'no_hp' => '084',
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
                 
             ],
         ];

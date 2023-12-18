@@ -9,19 +9,11 @@
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.16",
         "axios": "^1.1.2",
-<<<<<<< HEAD
         "flowbite": "^2.0.0",
         "laravel-vite-plugin": "^0.7.2",
         "lodash": "^4.17.19",
         "postcss": "^8.4.31",
         "tailwindcss": "^3.3.5",
-=======
-        "flowbite": "^1.8.1",
-        "laravel-vite-plugin": "^0.7.2",
-        "lodash": "^4.17.19",
-        "postcss": "^8.4.31",
-        "tailwindcss": "^3.3.3",
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
         "vite": "^4.0.0"
     }
 }

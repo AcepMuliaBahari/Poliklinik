@@ -5,15 +5,6 @@
         </h2>
     </x-slot>
 
-<<<<<<< HEAD
-
-=======
-@if(session('success'))
-<div id="flash-message" class="alert alert-success">
-    {{ session('success') }}
-</div>
-@endif
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
 
     
 
@@ -27,11 +18,7 @@
         <div class="mb-3">
             <label for="pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pasien</label>
             <select name="id_pasien" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-<<<<<<< HEAD
               @foreach ($pasien as $item) 
-=======
-              @foreach ($pasien as $item)
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
               <option value="{{ $item->id }}">{{ $item->nama_pasien }}</option>
               @endforeach
             </select>
@@ -52,15 +39,16 @@
             <input type="date" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" 
             name="tanggal_periksa" id="inputTanggalPeriksa" placeholder="Tanggal Periksa">
         </div>
-        <div class="mb-3">
-            <label for="inputCatatan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Obat</label>
-            <input type="text" name="obat" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="Obat">
-        </div>
+       
         <div class="mb-3">
             <label for="inputCatatan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Catatan</label>
             <input type="text" name="catatan" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="Catatan">
         
             
+        </div>
+        <div class="mb-3">
+            <label for="inputCatatan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Biaya Periksa</label>
+            <input type="text" name="biaya_periksa" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="Obat">
         </div>
         <x-primary-button type="submit" class="btn btn-primary me-2">Simpan</x-primary-button>
               

@@ -43,6 +43,9 @@
                         <x-dropdown-link :href="route('data.pasien')" :active="request()->routeIs('data.pasien')">
                             {{ __('Pasien') }}
                         </x-dropdown-link>
+                        <x-dropdown-link :href="route('data.obat')" :active="request()->routeIs('data.obat')">
+                            {{ __('Obat') }}
+                        </x-dropdown-link>
                     </x-slot>
                     </x-dropdown>
                     
@@ -50,6 +53,9 @@
                     
                         <x-nav-link :href="route('data.periksa')" :active="request()->routeIs('data.periksa')">
                             {{ __('Periksa') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('detail.periksa')" :active="request()->routeIs('detail.periksa')">
+                            {{ __('Detail Periksa') }}
                         </x-nav-link>
                     {{-- @elseif (auth()->user()->role === 'member')
                         <x-nav-link :href="route('data.periksa')" :active="request()->routeIs('data.periksa')">

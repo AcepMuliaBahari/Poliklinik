@@ -9,16 +9,11 @@ class Periksa extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id_pasien', // Tambahkan id_pasien ke dalam daftar ini
+        'id_pasien', 
         'id_dokter',
         'tanggal_periksa',
-<<<<<<< HEAD
         'catatan',
-        'obat',
-=======
-        'obat',
-        'catatan',
->>>>>>> 2b1f10c0a8118b0199632b44cac03f14bfc15c03
+        'biaya_periksa'
     ];
     public function pasien()
     {
@@ -29,4 +24,14 @@ class Periksa extends Model
     {
         return $this->belongsTo(Dokter::class, 'id_dokter');
     }
+    public function transaksiDetailPeriksa()
+    {
+        return $this->hasMany(TransaksiDetailPeriksa::class, 'id_periksa');
+    }
+   
+   
+
+
+
+
 }
